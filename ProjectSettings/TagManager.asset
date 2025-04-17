@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - Coins
   - Checkpoint
+  - DeadZone
+  - Enemy
+  - Trap
   layers:
   - Default
   - TransparentFX
