@@ -14,7 +14,7 @@ public class PlayerCollectController : MonoBehaviour
 
     void Update()
     {
-        tm.SetText("Score: " + score.ToString());
+        tm.SetText("Score: " + score.ToString() + " / 10");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -39,7 +39,7 @@ public class PlayerCollectController : MonoBehaviour
         AudioSource sound = coins.GetComponent<AudioSource>();
         score++;
         sound.Play();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         Destroy(coins);
     }
 

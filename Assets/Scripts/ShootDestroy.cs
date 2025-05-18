@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BulletDestroy : MonoBehaviour
+public class ShootDestroy : MonoBehaviour
 {
     void Update()
     {
@@ -12,3 +12,6 @@ public class BulletDestroy : MonoBehaviour
         }
     }
 }
+
+
+

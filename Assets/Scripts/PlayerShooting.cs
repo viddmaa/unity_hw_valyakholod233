@@ -37,7 +37,7 @@ public class PlayerShooting : MonoBehaviour
 
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.linearVelocity = Vector2.right * bulletSpeed;
+        rb.linearVelocity = firePoint.right * bulletSpeed;
 
         if (shootSound != null)
         {
